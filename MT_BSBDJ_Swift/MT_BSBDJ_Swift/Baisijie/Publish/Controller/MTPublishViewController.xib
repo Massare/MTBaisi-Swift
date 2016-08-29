@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MTPublishViewController" customModule="MT_BSBDJ_Swift" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="Jdv-Yq-wpm" id="9Vt-9R-GTt"/>
+                <outlet property="sloganImageView" destination="3DD-r0-BZw" id="kRI-Wu-uIQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shareBottomBackground" translatesAutoresizingMaskIntoConstraints="NO" id="TC6-aW-bRd">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_slogan" translatesAutoresizingMaskIntoConstraints="NO" id="3DD-r0-BZw">
+                    <rect key="frame" x="199" y="80" width="202" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="1c8-C4-gIl"/>
+                        <constraint firstAttribute="width" constant="202" id="WXO-lE-Sd0"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RR9-yU-WQe">
+                    <rect key="frame" x="155" y="530" width="289" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="CA6-7w-86E"/>
+                        <constraint firstAttribute="width" constant="289" id="cTW-50-RhC"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="shareButtonCancel"/>
+                    <connections>
+                        <action selector="cancelButtonClick:" destination="-1" eventType="touchUpInside" id="9Cd-Dv-2G0"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jdv-Yq-wpm">
+                    <rect key="frame" x="0.0" y="215" width="600" height="210"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngK-2G-2gT">
+                            <rect key="frame" x="20" y="0.0" width="75" height="95"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="75" id="K31-bp-vaQ"/>
+                                <constraint firstAttribute="height" constant="95" id="d5Z-Sn-sjQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <inset key="titleEdgeInsets" minX="-70" minY="75" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="发视频" image="publish-video">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybb-b7-IoR">
+                            <rect key="frame" x="505" y="0.0" width="75" height="95"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <inset key="titleEdgeInsets" minX="-70" minY="75" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="发图片" image="publish-picture">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqQ-9H-57n">
+                            <rect key="frame" x="20" y="115" width="75" height="95"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <inset key="titleEdgeInsets" minX="-70" minY="75" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="发段子" image="publish-text">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5FZ-iT-9Km">
+                            <rect key="frame" x="262" y="115" width="75" height="95"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <inset key="titleEdgeInsets" minX="-70" minY="75" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="审贴" image="publish-review">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlE-Tb-1gL">
+                            <rect key="frame" x="505" y="115" width="75" height="95"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <inset key="titleEdgeInsets" minX="-70" minY="75" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="发链接" image="publish-offline">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rV6-Ln-Ghz">
+                            <rect key="frame" x="262" y="0.0" width="75" height="95"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <inset key="titleEdgeInsets" minX="-70" minY="75" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="发音频" image="publish-audio">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ybb-b7-IoR" firstAttribute="width" secondItem="ngK-2G-2gT" secondAttribute="width" id="1Tf-08-Ama"/>
+                        <constraint firstItem="sqQ-9H-57n" firstAttribute="leading" secondItem="ngK-2G-2gT" secondAttribute="leading" id="C46-F7-9gr"/>
+                        <constraint firstItem="5FZ-iT-9Km" firstAttribute="centerX" secondItem="Jdv-Yq-wpm" secondAttribute="centerX" id="CDl-Go-Vzm"/>
+                        <constraint firstItem="5FZ-iT-9Km" firstAttribute="width" secondItem="ngK-2G-2gT" secondAttribute="width" id="Dz4-O1-IGe"/>
+                        <constraint firstItem="sqQ-9H-57n" firstAttribute="height" secondItem="ngK-2G-2gT" secondAttribute="height" id="JBs-aJ-2Jc"/>
+                        <constraint firstItem="rV6-Ln-Ghz" firstAttribute="top" secondItem="ngK-2G-2gT" secondAttribute="top" id="OPp-Te-IhI"/>
+                        <constraint firstItem="rV6-Ln-Ghz" firstAttribute="centerX" secondItem="Jdv-Yq-wpm" secondAttribute="centerX" id="OXj-R7-2pn"/>
+                        <constraint firstItem="rV6-Ln-Ghz" firstAttribute="width" secondItem="ngK-2G-2gT" secondAttribute="width" id="RdW-LE-ARL"/>
+                        <constraint firstAttribute="height" constant="210" id="UJd-A6-GIy"/>
+                        <constraint firstItem="XlE-Tb-1gL" firstAttribute="height" secondItem="ngK-2G-2gT" secondAttribute="height" id="Uht-ee-lWT"/>
+                        <constraint firstItem="XlE-Tb-1gL" firstAttribute="bottom" secondItem="sqQ-9H-57n" secondAttribute="bottom" id="V5j-aG-6br"/>
+                        <constraint firstItem="ybb-b7-IoR" firstAttribute="top" secondItem="ngK-2G-2gT" secondAttribute="top" id="W17-oT-02I"/>
+                        <constraint firstItem="ybb-b7-IoR" firstAttribute="height" secondItem="ngK-2G-2gT" secondAttribute="height" id="euI-e7-eFj"/>
+                        <constraint firstItem="ngK-2G-2gT" firstAttribute="leading" secondItem="Jdv-Yq-wpm" secondAttribute="leading" constant="20" id="hE4-NI-v9T"/>
+                        <constraint firstAttribute="trailing" secondItem="ybb-b7-IoR" secondAttribute="trailing" constant="20" id="iIc-yc-i1P"/>
+                        <constraint firstItem="rV6-Ln-Ghz" firstAttribute="height" secondItem="ngK-2G-2gT" secondAttribute="height" id="iX5-9v-oFm"/>
+                        <constraint firstItem="XlE-Tb-1gL" firstAttribute="leading" secondItem="ybb-b7-IoR" secondAttribute="leading" id="lHw-vH-4aS"/>
+                        <constraint firstItem="5FZ-iT-9Km" firstAttribute="bottom" secondItem="sqQ-9H-57n" secondAttribute="bottom" id="n8B-V1-zk7"/>
+                        <constraint firstItem="5FZ-iT-9Km" firstAttribute="height" secondItem="ngK-2G-2gT" secondAttribute="height" id="q1X-b4-Gzp"/>
+                        <constraint firstAttribute="bottom" secondItem="sqQ-9H-57n" secondAttribute="bottom" id="q6Q-14-Kyp"/>
+                        <constraint firstItem="sqQ-9H-57n" firstAttribute="width" secondItem="ngK-2G-2gT" secondAttribute="width" id="yB9-hw-bSi"/>
+                        <constraint firstItem="ngK-2G-2gT" firstAttribute="top" secondItem="Jdv-Yq-wpm" secondAttribute="top" id="yBZ-w1-eCy"/>
+                        <constraint firstItem="XlE-Tb-1gL" firstAttribute="width" secondItem="ngK-2G-2gT" secondAttribute="width" id="yWO-UU-hNN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Jdv-Yq-wpm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="46q-pT-3ga"/>
+                <constraint firstAttribute="trailing" secondItem="Jdv-Yq-wpm" secondAttribute="trailing" id="65c-Dt-L2E"/>
+                <constraint firstItem="Jdv-Yq-wpm" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="20" id="87x-c6-ToG"/>
+                <constraint firstAttribute="bottom" secondItem="TC6-aW-bRd" secondAttribute="bottom" id="Cin-8a-GH2"/>
+                <constraint firstItem="TC6-aW-bRd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EjT-Zp-egC"/>
+                <constraint firstItem="RR9-yU-WQe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PQc-mk-g6L"/>
+                <constraint firstAttribute="bottom" secondItem="RR9-yU-WQe" secondAttribute="bottom" constant="30" id="YwR-BX-Q4g"/>
+                <constraint firstItem="Jdv-Yq-wpm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fiR-1f-R5Z"/>
+                <constraint firstAttribute="trailing" secondItem="TC6-aW-bRd" secondAttribute="trailing" id="hvT-6E-87V"/>
+                <constraint firstItem="3DD-r0-BZw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nwm-pc-s0t"/>
+                <constraint firstItem="Jdv-Yq-wpm" firstAttribute="top" secondItem="3DD-r0-BZw" secondAttribute="bottom" constant="115" id="s8u-C0-xh2"/>
+                <constraint firstItem="TC6-aW-bRd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zDV-Cn-uJO"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="app_slogan" width="202" height="20"/>
+        <image name="publish-audio" width="72" height="72"/>
+        <image name="publish-offline" width="72" height="72"/>
+        <image name="publish-picture" width="72" height="72"/>
+        <image name="publish-review" width="72" height="72"/>
+        <image name="publish-text" width="72" height="72"/>
+        <image name="publish-video" width="72" height="72"/>
+        <image name="shareBottomBackground" width="320" height="343"/>
+        <image name="shareButtonCancel" width="289" height="40"/>
+    </resources>
+</document>

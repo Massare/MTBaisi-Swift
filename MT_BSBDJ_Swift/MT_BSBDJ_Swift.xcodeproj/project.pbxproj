@@ -1,0 +1,782 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12FB8F4B859E90E5A6BDF37B /* Pods_MT_BSBDJ_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5283BB9EA00201923F9B983B /* Pods_MT_BSBDJ_Swift.framework */; };
+		199972DE1D4F9002008EE0AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199972DD1D4F9002008EE0AB /* AppDelegate.swift */; };
+		199972E31D4F9002008EE0AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 199972E11D4F9002008EE0AB /* Main.storyboard */; };
+		199972E51D4F9003008EE0AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 199972E41D4F9002008EE0AB /* Assets.xcassets */; };
+		1999730A1D4F935A008EE0AB /* MTTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199973091D4F935A008EE0AB /* MTTabBarController.swift */; };
+		1999730C1D4F937A008EE0AB /* MTNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1999730B1D4F937A008EE0AB /* MTNavigationController.swift */; };
+		1999730E1D4F938E008EE0AB /* MTTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1999730D1D4F938E008EE0AB /* MTTabBar.swift */; };
+		199973101D4F9427008EE0AB /* UIBarButton+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1999730F1D4F9427008EE0AB /* UIBarButton+Category.swift */; };
+		199973121D4F9E7B008EE0AB /* MTCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199973111D4F9E7B008EE0AB /* MTCommon.swift */; };
+		199973161D4F9FE3008EE0AB /* MTEssenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199973151D4F9FE3008EE0AB /* MTEssenceViewController.swift */; };
+		1999731A1D4FA04B008EE0AB /* MTNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199973191D4FA04B008EE0AB /* MTNewViewController.swift */; };
+		1999731C1D4FA05D008EE0AB /* MTMeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1999731B1D4FA05D008EE0AB /* MTMeTableViewController.swift */; };
+		19DA78E91D50B1F300998D26 /* MTSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA78E81D50B1F300998D26 /* MTSquare.swift */; };
+		19DA78EB1D50B51200998D26 /* MTFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA78EA1D50B51200998D26 /* MTFooterView.swift */; };
+		19DA78ED1D50B52F00998D26 /* MTSquareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA78EC1D50B52F00998D26 /* MTSquareButton.swift */; };
+		19DA78EF1D50C55C00998D26 /* MTHTTPTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA78EE1D50C55C00998D26 /* MTHTTPTool.swift */; };
+		19DA78F11D50C8BF00998D26 /* MTWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA78F01D50C8BF00998D26 /* MTWebViewController.swift */; };
+		19DA78F41D50DBC000998D26 /* MTPublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA78F21D50DBC000998D26 /* MTPublishViewController.swift */; };
+		19DA78F51D50DBC000998D26 /* MTPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19DA78F31D50DBC000998D26 /* MTPublishViewController.xib */; };
+		19DA78F81D516FB600998D26 /* MTConcernViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA78F61D516FB600998D26 /* MTConcernViewController.swift */; };
+		19DA78F91D516FB600998D26 /* MTConcernViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19DA78F71D516FB600998D26 /* MTConcernViewController.xib */; };
+		19DA78FC1D51713500998D26 /* MTLoginAndRegisgterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA78FA1D51713500998D26 /* MTLoginAndRegisgterViewController.swift */; };
+		19DA78FD1D51713500998D26 /* MTLoginAndRegisgterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19DA78FB1D51713500998D26 /* MTLoginAndRegisgterViewController.xib */; };
+		19DA78FF1D518E2C00998D26 /* MTTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA78FE1D518E2C00998D26 /* MTTextField.swift */; };
+		19DA79041D5195C400998D26 /* MTRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA79021D5195C400998D26 /* MTRecommendViewController.swift */; };
+		19DA79051D5195C400998D26 /* MTRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19DA79031D5195C400998D26 /* MTRecommendViewController.xib */; };
+		19DA79071D51969600998D26 /* MTCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA79061D51969600998D26 /* MTCategory.swift */; };
+		19DA79091D5196A000998D26 /* MTUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA79081D5196A000998D26 /* MTUser.swift */; };
+		19DA79131D51C18200998D26 /* MTRecommendTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA79121D51C18200998D26 /* MTRecommendTool.swift */; };
+		19DA791A1D52391D00998D26 /* MTUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA79181D52391D00998D26 /* MTUserTableViewCell.swift */; };
+		19DA791B1D52391D00998D26 /* MTUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19DA79191D52391D00998D26 /* MTUserTableViewCell.xib */; };
+		19DA79221D5240CF00998D26 /* MTCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA79201D5240CF00998D26 /* MTCategoryTableViewCell.swift */; };
+		19DA79231D5240CF00998D26 /* MTCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19DA79211D5240CF00998D26 /* MTCategoryTableViewCell.xib */; };
+		19DA79281D53494900998D26 /* MTPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA79261D53494900998D26 /* MTPictureViewController.swift */; };
+		19DA79291D53494900998D26 /* MTPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19DA79271D53494900998D26 /* MTPictureViewController.xib */; };
+		19DA792D1D53497200998D26 /* MTTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA792C1D53497200998D26 /* MTTopic.swift */; };
+		19DA792F1D53498100998D26 /* MTComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA792E1D53498100998D26 /* MTComment.swift */; };
+		19DA79311D5349A000998D26 /* MTTopicUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA79301D5349A000998D26 /* MTTopicUser.swift */; };
+		19DA79331D5349B700998D26 /* MTRecommendTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA79321D5349B700998D26 /* MTRecommendTag.swift */; };
+		19DA79351D5349CC00998D26 /* MTTagTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA79341D5349CC00998D26 /* MTTagTableViewController.swift */; };
+		19DA79381D534A0600998D26 /* MTTopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA79361D534A0600998D26 /* MTTopicTableViewCell.swift */; };
+		19DA79391D534A0600998D26 /* MTTopicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19DA79371D534A0600998D26 /* MTTopicTableViewCell.xib */; };
+		19DA793C1D534A1C00998D26 /* MTCommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA793A1D534A1C00998D26 /* MTCommentTableViewCell.swift */; };
+		19DA793D1D534A1C00998D26 /* MTCommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19DA793B1D534A1C00998D26 /* MTCommentTableViewCell.xib */; };
+		19DA79401D534A2A00998D26 /* MTTagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA793E1D534A2A00998D26 /* MTTagTableViewCell.swift */; };
+		19DA79411D534A2A00998D26 /* MTTagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19DA793F1D534A2A00998D26 /* MTTagTableViewCell.xib */; };
+		19DA79431D534A4A00998D26 /* MTPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA79421D534A4A00998D26 /* MTPictureView.swift */; };
+		19DA79451D534A5E00998D26 /* MTPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19DA79441D534A5E00998D26 /* MTPictureView.xib */; };
+		19DA79471D534A8600998D26 /* MTVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19DA79461D534A8600998D26 /* MTVideoView.xib */; };
+		19DA79491D534A9E00998D26 /* MTVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19DA79481D534A9E00998D26 /* MTVoiceView.xib */; };
+		19DA794B1D534AC400998D26 /* MTVoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA794A1D534AC400998D26 /* MTVoiceView.swift */; };
+		19DA794D1D534AD500998D26 /* MTVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA794C1D534AD500998D26 /* MTVideoView.swift */; };
+		19DA79511D5861E500998D26 /* MTAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA79501D5861E500998D26 /* MTAlertController.swift */; };
+		19DA79571D58B36500998D26 /* MTEssenceTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA79561D58B36500998D26 /* MTEssenceTool.swift */; };
+		19DA79591D58B9CF00998D26 /* MTTopicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA79581D58B9CF00998D26 /* MTTopicTableViewController.swift */; };
+		19DA795C1D596DA700998D26 /* MTCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA795A1D596DA700998D26 /* MTCommentViewController.swift */; };
+		19DA795D1D596DA700998D26 /* MTCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19DA795B1D596DA700998D26 /* MTCommentViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		199972DA1D4F9002008EE0AB /* MT_BSBDJ_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MT_BSBDJ_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		199972DD1D4F9002008EE0AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		199972E21D4F9002008EE0AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		199972E41D4F9002008EE0AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		199972E91D4F9003008EE0AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		199973091D4F935A008EE0AB /* MTTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTTabBarController.swift; sourceTree = "<group>"; };
+		1999730B1D4F937A008EE0AB /* MTNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTNavigationController.swift; sourceTree = "<group>"; };
+		1999730D1D4F938E008EE0AB /* MTTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTTabBar.swift; sourceTree = "<group>"; };
+		1999730F1D4F9427008EE0AB /* UIBarButton+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButton+Category.swift"; sourceTree = "<group>"; };
+		199973111D4F9E7B008EE0AB /* MTCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTCommon.swift; sourceTree = "<group>"; };
+		199973151D4F9FE3008EE0AB /* MTEssenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTEssenceViewController.swift; sourceTree = "<group>"; };
+		199973191D4FA04B008EE0AB /* MTNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTNewViewController.swift; sourceTree = "<group>"; };
+		1999731B1D4FA05D008EE0AB /* MTMeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTMeTableViewController.swift; sourceTree = "<group>"; };
+		19DA78E81D50B1F300998D26 /* MTSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTSquare.swift; sourceTree = "<group>"; };
+		19DA78EA1D50B51200998D26 /* MTFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTFooterView.swift; sourceTree = "<group>"; };
+		19DA78EC1D50B52F00998D26 /* MTSquareButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTSquareButton.swift; sourceTree = "<group>"; };
+		19DA78EE1D50C55C00998D26 /* MTHTTPTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTHTTPTool.swift; sourceTree = "<group>"; };
+		19DA78F01D50C8BF00998D26 /* MTWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTWebViewController.swift; sourceTree = "<group>"; };
+		19DA78F21D50DBC000998D26 /* MTPublishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTPublishViewController.swift; sourceTree = "<group>"; };
+		19DA78F31D50DBC000998D26 /* MTPublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTPublishViewController.xib; sourceTree = "<group>"; };
+		19DA78F61D516FB600998D26 /* MTConcernViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTConcernViewController.swift; sourceTree = "<group>"; };
+		19DA78F71D516FB600998D26 /* MTConcernViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTConcernViewController.xib; sourceTree = "<group>"; };
+		19DA78FA1D51713500998D26 /* MTLoginAndRegisgterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTLoginAndRegisgterViewController.swift; sourceTree = "<group>"; };
+		19DA78FB1D51713500998D26 /* MTLoginAndRegisgterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTLoginAndRegisgterViewController.xib; sourceTree = "<group>"; };
+		19DA78FE1D518E2C00998D26 /* MTTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTTextField.swift; sourceTree = "<group>"; };
+		19DA79021D5195C400998D26 /* MTRecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTRecommendViewController.swift; sourceTree = "<group>"; };
+		19DA79031D5195C400998D26 /* MTRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTRecommendViewController.xib; sourceTree = "<group>"; };
+		19DA79061D51969600998D26 /* MTCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTCategory.swift; sourceTree = "<group>"; };
+		19DA79081D5196A000998D26 /* MTUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTUser.swift; sourceTree = "<group>"; };
+		19DA79121D51C18200998D26 /* MTRecommendTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTRecommendTool.swift; sourceTree = "<group>"; };
+		19DA79141D51C2A700998D26 /* MT_BSBDJ_Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MT_BSBDJ_Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		19DA79181D52391D00998D26 /* MTUserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTUserTableViewCell.swift; sourceTree = "<group>"; };
+		19DA79191D52391D00998D26 /* MTUserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTUserTableViewCell.xib; sourceTree = "<group>"; };
+		19DA79201D5240CF00998D26 /* MTCategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		19DA79211D5240CF00998D26 /* MTCategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTCategoryTableViewCell.xib; sourceTree = "<group>"; };
+		19DA79261D53494900998D26 /* MTPictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTPictureViewController.swift; sourceTree = "<group>"; };
+		19DA79271D53494900998D26 /* MTPictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTPictureViewController.xib; sourceTree = "<group>"; };
+		19DA792C1D53497200998D26 /* MTTopic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTTopic.swift; sourceTree = "<group>"; };
+		19DA792E1D53498100998D26 /* MTComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTComment.swift; sourceTree = "<group>"; };
+		19DA79301D5349A000998D26 /* MTTopicUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTTopicUser.swift; sourceTree = "<group>"; };
+		19DA79321D5349B700998D26 /* MTRecommendTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTRecommendTag.swift; sourceTree = "<group>"; };
+		19DA79341D5349CC00998D26 /* MTTagTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTTagTableViewController.swift; sourceTree = "<group>"; };
+		19DA79361D534A0600998D26 /* MTTopicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTTopicTableViewCell.swift; sourceTree = "<group>"; };
+		19DA79371D534A0600998D26 /* MTTopicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTTopicTableViewCell.xib; sourceTree = "<group>"; };
+		19DA793A1D534A1C00998D26 /* MTCommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTCommentTableViewCell.swift; sourceTree = "<group>"; };
+		19DA793B1D534A1C00998D26 /* MTCommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTCommentTableViewCell.xib; sourceTree = "<group>"; };
+		19DA793E1D534A2A00998D26 /* MTTagTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTTagTableViewCell.swift; sourceTree = "<group>"; };
+		19DA793F1D534A2A00998D26 /* MTTagTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTTagTableViewCell.xib; sourceTree = "<group>"; };
+		19DA79421D534A4A00998D26 /* MTPictureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTPictureView.swift; sourceTree = "<group>"; };
+		19DA79441D534A5E00998D26 /* MTPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTPictureView.xib; sourceTree = "<group>"; };
+		19DA79461D534A8600998D26 /* MTVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTVideoView.xib; sourceTree = "<group>"; };
+		19DA79481D534A9E00998D26 /* MTVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTVoiceView.xib; sourceTree = "<group>"; };
+		19DA794A1D534AC400998D26 /* MTVoiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTVoiceView.swift; sourceTree = "<group>"; };
+		19DA794C1D534AD500998D26 /* MTVideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTVideoView.swift; sourceTree = "<group>"; };
+		19DA79501D5861E500998D26 /* MTAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTAlertController.swift; sourceTree = "<group>"; };
+		19DA79561D58B36500998D26 /* MTEssenceTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTEssenceTool.swift; sourceTree = "<group>"; };
+		19DA79581D58B9CF00998D26 /* MTTopicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTTopicTableViewController.swift; sourceTree = "<group>"; };
+		19DA795A1D596DA700998D26 /* MTCommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTCommentViewController.swift; sourceTree = "<group>"; };
+		19DA795B1D596DA700998D26 /* MTCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTCommentViewController.xib; sourceTree = "<group>"; };
+		5283BB9EA00201923F9B983B /* Pods_MT_BSBDJ_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MT_BSBDJ_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83C9E54753EEEC995C77FC69 /* Pods-MT_BSBDJ_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MT_BSBDJ_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MT_BSBDJ_Swift/Pods-MT_BSBDJ_Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		C5279C9833DBF67CE2A0BB35 /* Pods-MT_BSBDJ_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MT_BSBDJ_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-MT_BSBDJ_Swift/Pods-MT_BSBDJ_Swift.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		199972D71D4F9002008EE0AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12FB8F4B859E90E5A6BDF37B /* Pods_MT_BSBDJ_Swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		040E14F90EEAC3A4AD013A64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5283BB9EA00201923F9B983B /* Pods_MT_BSBDJ_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		199972D11D4F9002008EE0AB = {
+			isa = PBXGroup;
+			children = (
+				199972DC1D4F9002008EE0AB /* MT_BSBDJ_Swift */,
+				199972DB1D4F9002008EE0AB /* Products */,
+				DF8755736370137834A9726A /* Pods */,
+				040E14F90EEAC3A4AD013A64 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		199972DB1D4F9002008EE0AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				199972DA1D4F9002008EE0AB /* MT_BSBDJ_Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		199972DC1D4F9002008EE0AB /* MT_BSBDJ_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				199972EF1D4F92DB008EE0AB /* Baisijie */,
+				199972DD1D4F9002008EE0AB /* AppDelegate.swift */,
+				199973111D4F9E7B008EE0AB /* MTCommon.swift */,
+				199972E11D4F9002008EE0AB /* Main.storyboard */,
+				199972E41D4F9002008EE0AB /* Assets.xcassets */,
+				199972E91D4F9003008EE0AB /* Info.plist */,
+				19DA79141D51C2A700998D26 /* MT_BSBDJ_Swift-Bridging-Header.h */,
+			);
+			path = MT_BSBDJ_Swift;
+			sourceTree = "<group>";
+		};
+		199972EF1D4F92DB008EE0AB /* Baisijie */ = {
+			isa = PBXGroup;
+			children = (
+				199972F41D4F92DB008EE0AB /* Essence */,
+				199972FC1D4F92DB008EE0AB /* New */,
+				199972F01D4F92DB008EE0AB /* Concern */,
+				199972F81D4F92DB008EE0AB /* Me */,
+				199973041D4F92DB008EE0AB /* Publish */,
+				199973001D4F92DB008EE0AB /* Others */,
+				199973081D4F92DB008EE0AB /* Tool */,
+			);
+			path = Baisijie;
+			sourceTree = "<group>";
+		};
+		199972F01D4F92DB008EE0AB /* Concern */ = {
+			isa = PBXGroup;
+			children = (
+				199972F11D4F92DB008EE0AB /* Controller */,
+				199972F21D4F92DB008EE0AB /* Model */,
+				199972F31D4F92DB008EE0AB /* View */,
+			);
+			path = Concern;
+			sourceTree = "<group>";
+		};
+		199972F11D4F92DB008EE0AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				19DA78F61D516FB600998D26 /* MTConcernViewController.swift */,
+				19DA78F71D516FB600998D26 /* MTConcernViewController.xib */,
+				19DA79021D5195C400998D26 /* MTRecommendViewController.swift */,
+				19DA79031D5195C400998D26 /* MTRecommendViewController.xib */,
+				19DA78FA1D51713500998D26 /* MTLoginAndRegisgterViewController.swift */,
+				19DA78FB1D51713500998D26 /* MTLoginAndRegisgterViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		199972F21D4F92DB008EE0AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				19DA79061D51969600998D26 /* MTCategory.swift */,
+				19DA79081D5196A000998D26 /* MTUser.swift */,
+				19DA79121D51C18200998D26 /* MTRecommendTool.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		199972F31D4F92DB008EE0AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19DA79181D52391D00998D26 /* MTUserTableViewCell.swift */,
+				19DA79191D52391D00998D26 /* MTUserTableViewCell.xib */,
+				19DA79201D5240CF00998D26 /* MTCategoryTableViewCell.swift */,
+				19DA79211D5240CF00998D26 /* MTCategoryTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		199972F41D4F92DB008EE0AB /* Essence */ = {
+			isa = PBXGroup;
+			children = (
+				199972F51D4F92DB008EE0AB /* Controller */,
+				199972F61D4F92DB008EE0AB /* Model */,
+				199972F71D4F92DB008EE0AB /* View */,
+			);
+			path = Essence;
+			sourceTree = "<group>";
+		};
+		199972F51D4F92DB008EE0AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				199973151D4F9FE3008EE0AB /* MTEssenceViewController.swift */,
+				19DA79581D58B9CF00998D26 /* MTTopicTableViewController.swift */,
+				19DA79261D53494900998D26 /* MTPictureViewController.swift */,
+				19DA79271D53494900998D26 /* MTPictureViewController.xib */,
+				19DA795A1D596DA700998D26 /* MTCommentViewController.swift */,
+				19DA795B1D596DA700998D26 /* MTCommentViewController.xib */,
+				19DA79341D5349CC00998D26 /* MTTagTableViewController.swift */,
+				19DA79501D5861E500998D26 /* MTAlertController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		199972F61D4F92DB008EE0AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				19DA792C1D53497200998D26 /* MTTopic.swift */,
+				19DA792E1D53498100998D26 /* MTComment.swift */,
+				19DA79301D5349A000998D26 /* MTTopicUser.swift */,
+				19DA79321D5349B700998D26 /* MTRecommendTag.swift */,
+				19DA79561D58B36500998D26 /* MTEssenceTool.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		199972F71D4F92DB008EE0AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19DA79361D534A0600998D26 /* MTTopicTableViewCell.swift */,
+				19DA79371D534A0600998D26 /* MTTopicTableViewCell.xib */,
+				19DA79421D534A4A00998D26 /* MTPictureView.swift */,
+				19DA79441D534A5E00998D26 /* MTPictureView.xib */,
+				19DA794A1D534AC400998D26 /* MTVoiceView.swift */,
+				19DA79481D534A9E00998D26 /* MTVoiceView.xib */,
+				19DA794C1D534AD500998D26 /* MTVideoView.swift */,
+				19DA79461D534A8600998D26 /* MTVideoView.xib */,
+				19DA793A1D534A1C00998D26 /* MTCommentTableViewCell.swift */,
+				19DA793B1D534A1C00998D26 /* MTCommentTableViewCell.xib */,
+				19DA793E1D534A2A00998D26 /* MTTagTableViewCell.swift */,
+				19DA793F1D534A2A00998D26 /* MTTagTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		199972F81D4F92DB008EE0AB /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				199972F91D4F92DB008EE0AB /* Controller */,
+				199972FA1D4F92DB008EE0AB /* Model */,
+				199972FB1D4F92DB008EE0AB /* View */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		199972F91D4F92DB008EE0AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1999731B1D4FA05D008EE0AB /* MTMeTableViewController.swift */,
+				19DA78F01D50C8BF00998D26 /* MTWebViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		199972FA1D4F92DB008EE0AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				19DA78E81D50B1F300998D26 /* MTSquare.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		199972FB1D4F92DB008EE0AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19DA78EA1D50B51200998D26 /* MTFooterView.swift */,
+				19DA78EC1D50B52F00998D26 /* MTSquareButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		199972FC1D4F92DB008EE0AB /* New */ = {
+			isa = PBXGroup;
+			children = (
+				199972FD1D4F92DB008EE0AB /* Controller */,
+				199972FE1D4F92DB008EE0AB /* Model */,
+				199972FF1D4F92DB008EE0AB /* View */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
+		199972FD1D4F92DB008EE0AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				199973191D4FA04B008EE0AB /* MTNewViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		199972FE1D4F92DB008EE0AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		199972FF1D4F92DB008EE0AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		199973001D4F92DB008EE0AB /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				199973011D4F92DB008EE0AB /* Controller */,
+				199973021D4F92DB008EE0AB /* Model */,
+				199973031D4F92DB008EE0AB /* View */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		199973011D4F92DB008EE0AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				199973091D4F935A008EE0AB /* MTTabBarController.swift */,
+				1999730B1D4F937A008EE0AB /* MTNavigationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		199973021D4F92DB008EE0AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		199973031D4F92DB008EE0AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1999730D1D4F938E008EE0AB /* MTTabBar.swift */,
+				1999730F1D4F9427008EE0AB /* UIBarButton+Category.swift */,
+				19DA78FE1D518E2C00998D26 /* MTTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		199973041D4F92DB008EE0AB /* Publish */ = {
+			isa = PBXGroup;
+			children = (
+				199973051D4F92DB008EE0AB /* Controller */,
+				199973061D4F92DB008EE0AB /* Model */,
+				199973071D4F92DB008EE0AB /* View */,
+			);
+			path = Publish;
+			sourceTree = "<group>";
+		};
+		199973051D4F92DB008EE0AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				19DA78F21D50DBC000998D26 /* MTPublishViewController.swift */,
+				19DA78F31D50DBC000998D26 /* MTPublishViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		199973061D4F92DB008EE0AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		199973071D4F92DB008EE0AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		199973081D4F92DB008EE0AB /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				19DA78EE1D50C55C00998D26 /* MTHTTPTool.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		DF8755736370137834A9726A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83C9E54753EEEC995C77FC69 /* Pods-MT_BSBDJ_Swift.debug.xcconfig */,
+				C5279C9833DBF67CE2A0BB35 /* Pods-MT_BSBDJ_Swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		199972D91D4F9002008EE0AB /* MT_BSBDJ_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 199972EC1D4F9003008EE0AB /* Build configuration list for PBXNativeTarget "MT_BSBDJ_Swift" */;
+			buildPhases = (
+				F5F147562A1BFA63A4CF5852 /* [CP] Check Pods Manifest.lock */,
+				199972D61D4F9002008EE0AB /* Sources */,
+				199972D71D4F9002008EE0AB /* Frameworks */,
+				199972D81D4F9002008EE0AB /* Resources */,
+				4F6A8A0756F736E2E921464B /* [CP] Embed Pods Frameworks */,
+				137DCE802D79886ACB83375B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MT_BSBDJ_Swift;
+			productName = MT_BSBDJ_Swift;
+			productReference = 199972DA1D4F9002008EE0AB /* MT_BSBDJ_Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		199972D21D4F9002008EE0AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MT;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = mlc;
+				TargetAttributes = {
+					199972D91D4F9002008EE0AB = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = KKE4F593UH;
+					};
+				};
+			};
+			buildConfigurationList = 199972D51D4F9002008EE0AB /* Build configuration list for PBXProject "MT_BSBDJ_Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 199972D11D4F9002008EE0AB;
+			productRefGroup = 199972DB1D4F9002008EE0AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				199972D91D4F9002008EE0AB /* MT_BSBDJ_Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		199972D81D4F9002008EE0AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DA79451D534A5E00998D26 /* MTPictureView.xib in Resources */,
+				19DA78F91D516FB600998D26 /* MTConcernViewController.xib in Resources */,
+				19DA78FD1D51713500998D26 /* MTLoginAndRegisgterViewController.xib in Resources */,
+				19DA79291D53494900998D26 /* MTPictureViewController.xib in Resources */,
+				199972E51D4F9003008EE0AB /* Assets.xcassets in Resources */,
+				19DA79471D534A8600998D26 /* MTVideoView.xib in Resources */,
+				19DA78F51D50DBC000998D26 /* MTPublishViewController.xib in Resources */,
+				19DA791B1D52391D00998D26 /* MTUserTableViewCell.xib in Resources */,
+				19DA793D1D534A1C00998D26 /* MTCommentTableViewCell.xib in Resources */,
+				19DA79391D534A0600998D26 /* MTTopicTableViewCell.xib in Resources */,
+				19DA79491D534A9E00998D26 /* MTVoiceView.xib in Resources */,
+				19DA79051D5195C400998D26 /* MTRecommendViewController.xib in Resources */,
+				19DA79231D5240CF00998D26 /* MTCategoryTableViewCell.xib in Resources */,
+				199972E31D4F9002008EE0AB /* Main.storyboard in Resources */,
+				19DA79411D534A2A00998D26 /* MTTagTableViewCell.xib in Resources */,
+				19DA795D1D596DA700998D26 /* MTCommentViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		137DCE802D79886ACB83375B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MT_BSBDJ_Swift/Pods-MT_BSBDJ_Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F6A8A0756F736E2E921464B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MT_BSBDJ_Swift/Pods-MT_BSBDJ_Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5F147562A1BFA63A4CF5852 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		199972D61D4F9002008EE0AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DA792D1D53497200998D26 /* MTTopic.swift in Sources */,
+				19DA79091D5196A000998D26 /* MTUser.swift in Sources */,
+				19DA79431D534A4A00998D26 /* MTPictureView.swift in Sources */,
+				19DA79041D5195C400998D26 /* MTRecommendViewController.swift in Sources */,
+				19DA791A1D52391D00998D26 /* MTUserTableViewCell.swift in Sources */,
+				19DA79591D58B9CF00998D26 /* MTTopicTableViewController.swift in Sources */,
+				19DA78F81D516FB600998D26 /* MTConcernViewController.swift in Sources */,
+				1999730A1D4F935A008EE0AB /* MTTabBarController.swift in Sources */,
+				19DA793C1D534A1C00998D26 /* MTCommentTableViewCell.swift in Sources */,
+				19DA78ED1D50B52F00998D26 /* MTSquareButton.swift in Sources */,
+				19DA792F1D53498100998D26 /* MTComment.swift in Sources */,
+				19DA794B1D534AC400998D26 /* MTVoiceView.swift in Sources */,
+				19DA79401D534A2A00998D26 /* MTTagTableViewCell.swift in Sources */,
+				19DA78F11D50C8BF00998D26 /* MTWebViewController.swift in Sources */,
+				1999731C1D4FA05D008EE0AB /* MTMeTableViewController.swift in Sources */,
+				19DA79511D5861E500998D26 /* MTAlertController.swift in Sources */,
+				19DA78EF1D50C55C00998D26 /* MTHTTPTool.swift in Sources */,
+				199973121D4F9E7B008EE0AB /* MTCommon.swift in Sources */,
+				19DA79221D5240CF00998D26 /* MTCategoryTableViewCell.swift in Sources */,
+				19DA795C1D596DA700998D26 /* MTCommentViewController.swift in Sources */,
+				199972DE1D4F9002008EE0AB /* AppDelegate.swift in Sources */,
+				19DA79331D5349B700998D26 /* MTRecommendTag.swift in Sources */,
+				1999731A1D4FA04B008EE0AB /* MTNewViewController.swift in Sources */,
+				19DA78FC1D51713500998D26 /* MTLoginAndRegisgterViewController.swift in Sources */,
+				19DA78FF1D518E2C00998D26 /* MTTextField.swift in Sources */,
+				199973101D4F9427008EE0AB /* UIBarButton+Category.swift in Sources */,
+				19DA79281D53494900998D26 /* MTPictureViewController.swift in Sources */,
+				1999730E1D4F938E008EE0AB /* MTTabBar.swift in Sources */,
+				19DA79131D51C18200998D26 /* MTRecommendTool.swift in Sources */,
+				19DA79571D58B36500998D26 /* MTEssenceTool.swift in Sources */,
+				19DA79071D51969600998D26 /* MTCategory.swift in Sources */,
+				19DA78EB1D50B51200998D26 /* MTFooterView.swift in Sources */,
+				1999730C1D4F937A008EE0AB /* MTNavigationController.swift in Sources */,
+				199973161D4F9FE3008EE0AB /* MTEssenceViewController.swift in Sources */,
+				19DA794D1D534AD500998D26 /* MTVideoView.swift in Sources */,
+				19DA79381D534A0600998D26 /* MTTopicTableViewCell.swift in Sources */,
+				19DA78E91D50B1F300998D26 /* MTSquare.swift in Sources */,
+				19DA79351D5349CC00998D26 /* MTTagTableViewController.swift in Sources */,
+				19DA78F41D50DBC000998D26 /* MTPublishViewController.swift in Sources */,
+				19DA79311D5349A000998D26 /* MTTopicUser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		199972E11D4F9002008EE0AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				199972E21D4F9002008EE0AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		199972EA1D4F9003008EE0AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		199972EB1D4F9003008EE0AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		199972ED1D4F9003008EE0AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83C9E54753EEEC995C77FC69 /* Pods-MT_BSBDJ_Swift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = MT_BSBDJ_Swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mlc.www.MT-BSBDJ-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MT_BSBDJ_Swift/MT_BSBDJ_Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		199972EE1D4F9003008EE0AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5279C9833DBF67CE2A0BB35 /* Pods-MT_BSBDJ_Swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = MT_BSBDJ_Swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mlc.www.MT-BSBDJ-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MT_BSBDJ_Swift/MT_BSBDJ_Swift-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		199972D51D4F9002008EE0AB /* Build configuration list for PBXProject "MT_BSBDJ_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				199972EA1D4F9003008EE0AB /* Debug */,
+				199972EB1D4F9003008EE0AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		199972EC1D4F9003008EE0AB /* Build configuration list for PBXNativeTarget "MT_BSBDJ_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				199972ED1D4F9003008EE0AB /* Debug */,
+				199972EE1D4F9003008EE0AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 199972D21D4F9002008EE0AB /* Project object */;
+}

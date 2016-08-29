@@ -1,0 +1,6 @@
+framework module Pods_MT_BSBDJ_Swift {
+  umbrella header "Pods-MT_BSBDJ_Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}
